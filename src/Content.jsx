@@ -6,24 +6,20 @@ import FormControl from "@mui/material/FormControl";
 import FormLabel from "@mui/material/FormLabel";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-// import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import moviesData from "./data";
 
-function Mycard() {
+function Movies(props) {
   return (
-    <Card className="card">
-      <img
-        className="card-img"
-        alt="leo"
-        src="https://static.tnn.in/thumb/msid-104546570,thumbsize-1549965,width-1280,height-720,resizemode-75/104546570.jpg"
-      />
+    <Card className="card" key={props.id}>
+      <img className="card-img" alt={props.title} src={props.image} />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Leo
+          {props.title}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          U/A . Tamil
+          {props.ageLimit} . {props.language}
         </Typography>
       </CardContent>
       <div className="movie-btn">
@@ -34,6 +30,8 @@ function Mycard() {
     </Card>
   );
 }
+
+export { Movies };
 
 export default function Content() {
   return (
@@ -89,19 +87,18 @@ export default function Content() {
 
       <div className="movie">
         <h1>Movies</h1>
-        <div className="movie-row1">
-          <Mycard />
-          <Mycard />
-          <Mycard />
-        </div>
-        <div className="movie-row1">
-          <Mycard />
-          <Mycard />
-          <Mycard />
+        <div className="movie-row">
+          {moviesData.map((moviesData) => (
+            <Movies
+              key={moviesData.id}
+              image={moviesData.image}
+              title={moviesData.title}
+              language={moviesData.language}
+              ageLimit={moviesData.ageLimit}
+            />
+          ))}
         </div>
       </div>
     </section>
   );
 }
-
-export { Mycard };

@@ -173,7 +173,6 @@ code {
 .movie {
 
   height: auto;
-  display: -ms-inline-grid;
   border-radius: 25px;
   margin: 20px 20px 20px 40px;
   background-color: #ffffff;
@@ -185,25 +184,35 @@ code {
   font-size: 24px;
 }
 
-.movie-row1 {
+.movie-row {
   margin-top: 20px;
   margin-bottom: 20px;
   display: flex;
+  flex-wrap: wrap;
+
   justify-content: space-around;
 
 }
 
 .card {
-  width: 30%;
-  /* margin: 30px 10px 25px 20px; */
+  width: 325px;
+  margin: 30px 10px 25px 20px;
 
   height: auto;
   box-shadow: none !important;
   border: lightgray 1px solid;
 }
 
+.card:hover {
+  transition: 0.5s;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
+  transform: scale(1.01);
+}
+
 .card-img {
   width: 350px;
+  height: 350px;
+  object-fit: cover;
 }
 
 .movie-btn {
