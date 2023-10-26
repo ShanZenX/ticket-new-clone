@@ -50,6 +50,7 @@ const moviesData = [
 
     ageLimit: "U",
   },
+
   // Add more Tamil movies as needed
 ];
 

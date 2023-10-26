@@ -53,7 +53,8 @@ code {
 }
 
 .header-left li:hover {
-  background-color: rgb(149, 213, 226);
+  border-radius: 5px;
+  background-color: rgb(195, 235, 243);
 }
 
 .header-right {
@@ -140,7 +141,6 @@ code {
   background-color: #e9e7e7;
 
   margin-right: 20px;
-  /* width: -webkit-fill-available; */
 
 }
 
@@ -195,9 +195,8 @@ code {
 }
 
 .card {
-  width: 325px;
-  margin: 30px 10px 25px 20px;
-
+  width: 300px;
+  margin: 10px 10px 10px 10px;
   height: auto;
   box-shadow: none !important;
   border: lightgray 1px solid;
@@ -226,6 +225,8 @@ code {
 
 /* upcoming */
 .upcoming {
+  display: flex;
+  flex-wrap: wrap;
   margin-left: 30px;
   margin-right: 30px;
   border-radius: 15px;
@@ -239,20 +240,20 @@ code {
 }
 
 .Upcoming-mov {
+  padding-bottom: 40px;
+  flex-wrap: wrap;
   display: flex;
-  justify-content: space-around;
+  width: 100%;
+  justify-content: center;
 
 }
 
-.upcoming-card {
-  font-size: larger;
-  margin-bottom: 20px;
-}
 
 .upcoming-card-img {
   width: 300px;
 }
 
+/* footer */
 .footer {
   background-color: #e9e7e7;
 }
@@ -267,12 +268,26 @@ code {
   justify-items: center;
 }
 
+.link-git {
+  color: black;
+  text-decoration: none;
+  padding: 7px 7px;
+}
+
+.link-git:hover {
+  text-decoration: underline;
+}
+
 .f-bar {
   margin-top: 20px;
   height: 2px;
   margin-left: 100px;
   background-color: black;
   margin-right: 100px;
+}
+
+.footer-img {
+  cursor: pointer;
 }
 
 .cr {
