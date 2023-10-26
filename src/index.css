@@ -1,4 +1,6 @@
 body {
+  background-color: rgba(223, 223, 223, 0.368);
+
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +12,265 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.header {
+
+  padding: 0px 40px 0px 40px;
+  background-color: rgb(255, 255, 255);
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: #e9e7e7 1px 5px 20px 1px;
+}
+
+.logo {
+  width: 100px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+
+}
+
+.header-left ul {
+  display: flex;
+  padding-left: 150px;
+
+}
+
+.header-left li {
+  list-style: none;
+  margin-right: 50px;
+  padding: 5px 5px 5px 5px;
+}
+
+.header-left li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.header-left li:hover {
+  background-color: rgb(149, 213, 226);
+}
+
+.header-right {
+  display: flex;
+  justify-content: flex-end;
+  width: -webkit-fill-available;
+}
+
+.bar {
+  margin-right: 10px;
+  width: 2px;
+  background-color: black;
+}
+
+.circle {
+  height: 25px;
+  padding-right: 10px;
+  width: 25px;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Mycarousel */
+.Mycarousel {
+  margin: 10px 10px 10px 10px;
+
+  margin-top: 40px;
+}
+
+.Mycarousel img {
+  border-radius: 25px;
+}
+
+/* minibar */
+.minibar {
+  margin-top: 50px;
+  width: 100%;
+  height: 80px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: #e9e7e7 1px 5px 20px 1px;
+
+}
+
+.minibar-btn {
+  /* width: 640px; */
+  background-color: rgb(245, 243, 243);
+  color: black;
+  margin-left: 20px;
+}
+
+.minibar-btn button {
+  font-size: 10px;
+  color: black;
+  margin: 10px 10px 10px 10px;
+}
+
+.minibar-sch {
+  margin-left: -130px;
+  display: flex;
+  justify-content: center;
+}
+
+.minibar-sch input {
+  margin-left: 10px;
+  width: 250px;
+  border: none;
+  outline: none;
+}
+
+.minibar-sch input:focus {
+  border-bottom: black solid 1px;
+
+
+}
+
+.sch-logo {
+  width: 20px;
+  height: 20px;
+}
+
+.minibar-loc {
+  background-color: #e9e7e7;
+
+  margin-right: 20px;
+  /* width: -webkit-fill-available; */
+
+}
+
+.minibar-loc button {
+  font-size: 10px;
+}
+
+/* content */
+.content {
+  margin-top: 40px;
+  height: auto;
+  display: flex;
+}
+
+/* language */
+.language {
+  height: fit-content;
+  margin: 20px 0px 10px 40px;
+  padding: 15px 30px 30px 40px;
+  border-radius: 25px;
+  width: 200px;
+  background-color: #ffffff;
+}
+
+.language-label {
+  color: rgb(2, 2, 2) !important;
+}
+
+/* movie */
+.movie {
+
+  height: auto;
+  display: -ms-inline-grid;
+  border-radius: 25px;
+  margin: 20px 20px 20px 40px;
+  background-color: #ffffff;
+}
+
+.movie h1 {
+  padding-top: 10px;
+  padding-left: 20px;
+  font-size: 24px;
+}
+
+.movie-row1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.card {
+  width: 30%;
+  /* margin: 30px 10px 25px 20px; */
+
+  height: auto;
+  box-shadow: none !important;
+  border: lightgray 1px solid;
+}
+
+.card-img {
+  width: 350px;
+}
+
+.movie-btn {
+  padding: 5px 0px 5px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border: none;
+  border-top: lightgray 1px solid;
+}
+
+/* upcoming */
+.upcoming {
+  margin-left: 30px;
+  margin-right: 30px;
+  border-radius: 15px;
+  background-color: white;
+  font-size: large;
+  margin-bottom: 40px;
+}
+
+.upcoming h1 {
+  padding: 20px 0px 0px 20px;
+}
+
+.Upcoming-mov {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.upcoming-card {
+  font-size: larger;
+  margin-bottom: 20px;
+}
+
+.upcoming-card-img {
+  width: 300px;
+}
+
+.footer {
+  background-color: #e9e7e7;
+}
+
+.footer img {
+  width: 100px;
+}
+
+.footer-d {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+}
+
+.f-bar {
+  margin-top: 20px;
+  height: 2px;
+  margin-left: 100px;
+  background-color: black;
+  margin-right: 100px;
+}
+
+.cr {
+  color: #969696;
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  justify-content: center;
+  align-items: center;
 }
